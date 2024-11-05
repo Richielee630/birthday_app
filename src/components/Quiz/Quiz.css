@@ -1,0 +1,42 @@
+.quiz-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .options {
+    margin: 20px 0;
+  }
+  
+  .option-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .option-button:hover {
+    background-color: #d3d3d3;
+  }
+  
+  .option-button.selected {
+    background-color: #a0c4ff;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .results {
+    color: #333;
+    margin-top: 20px;
+  }
+  

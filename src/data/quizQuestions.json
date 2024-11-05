@@ -1,0 +1,23 @@
+[
+    {
+      "question": "What is Xinyi's favorite color?",
+      "options": ["Red", "Blue", "Green", "Purple"],
+      "answer": "Purple"
+    },
+    {
+      "question": "Which city was Xinyi born in?",
+      "options": ["New York", "Los Angeles", "San Francisco", "Beijing"],
+      "answer": "Beijing"
+    },
+    {
+      "question": "What's Xinyi's favorite food?",
+      "options": ["Pizza", "Sushi", "Burgers", "Pasta"],
+      "answer": "Sushi"
+    },
+    {
+      "question": "What is Xinyi's hobby?",
+      "options": ["Painting", "Reading", "Dancing", "Photography"],
+      "answer": "Photography"
+    }
+  ]
+  
