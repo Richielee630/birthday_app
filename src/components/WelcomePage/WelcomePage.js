@@ -1,33 +1,31 @@
 import React from 'react';
 import './WelcomePage.css';
-import backgroundVideo from '../../assets/videos/video1.mp4';
+import animatedGif from '../../assets/images/animated-background.gif'; // Add the GIF
 import birthdayBackground from '../../assets/images/birthday-background.jpg';
 
 const WelcomePage = ({ showBirthdayImage }) => {
   return (
     <div className="welcome-container">
+      {/* Show the GIF instead of the video */}
       {!showBirthdayImage && (
-        <video
-          autoPlay
-          loop
-          muted
-          className="background-video"
-        >
-          <source src={backgroundVideo} type="video/mp4" /> {/* Using imported video */}
-          Your browser does not support the video tag.
-        </video>
+        <img
+          src={animatedGif}
+          alt="Animated background"
+          className="background-gif"
+        />
       )}
 
+      {/* Show the background image when showBirthdayImage is true */}
       {showBirthdayImage && (
         <div
           className="birthday-background"
-          style={{ backgroundImage: `url(${birthdayBackground})` }} // Fixed syntax
+          style={{ backgroundImage: `url(${birthdayBackground})` }}
         />
       )}
 
       <h1>Happy Birthday, Xinyi Li! 💕</h1>
       <p>Wishing you an incredible day filled with love, joy, and unforgettable moments.</p>
-      <p className="signature">-- by Richie Li™</p> {/* Signature line */}
+      <p className="signature">-- by Richie Li™</p>
     </div>
   );
 };

@@ -37,7 +37,8 @@
   }
   
   .message-form button {
-    padding: 0.5rem 1rem;
+    padding: 0.15rem 1rem;
+    font-size: 0.75rem;
     border: none;
     border-radius: 5px;
     background-color: #4CAF50;

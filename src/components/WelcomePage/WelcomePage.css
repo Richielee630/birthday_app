@@ -37,6 +37,16 @@
   z-index: -1;
 }
 
+.background-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 /* Background image styling */
 .birthday-background {
   position: absolute;
