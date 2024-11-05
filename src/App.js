@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <WelcomePage showBirthdayImage={showBirthdayImage} />
-      <CountdownTimer targetDate="2024-11-05 00:24:30" onCountdownEnd={handleCountdownEnd} /> {/* Replace with actual date */}
+      <CountdownTimer targetDate="2024-11-12 00:00:00" onCountdownEnd={handleCountdownEnd} /> {/* Replace with actual date */}
       <PhotoGallery />
       <Messages />
       <VideoSection />
