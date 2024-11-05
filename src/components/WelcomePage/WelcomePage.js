@@ -25,8 +25,9 @@ const WelcomePage = ({ showBirthdayImage }) => {
         />
       )}
 
-      <h1>Happy Birthday, Xinyi Li!</h1>
+      <h1>Happy Birthday, Xinyi Li! 💕</h1>
       <p>Wishing you an incredible day filled with love, joy, and unforgettable moments.</p>
+      <p className="signature">-- by Richie Li™</p> {/* Signature line */}
     </div>
   );
 };

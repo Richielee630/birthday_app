@@ -44,7 +44,7 @@ const CountdownTimer = ({ targetDate, onCountdownEnd }) => { // Added onCountdow
 
   return (
     <div className="countdown">
-      <h2 className={dancing ? 'dance-shake' : ''}>Countdown to the Special Day</h2>
+      <h2 className={dancing ? 'dance-shake' : ''}>Countdown to the Special Day 💝</h2>
       <div className="timer">
         <div className={`time-box ${dancing ? 'dance-bounce' : ''}`}>
           <span className="time">{timeLeft.days || '0'}</span>

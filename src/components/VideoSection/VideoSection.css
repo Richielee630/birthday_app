@@ -1,29 +1,57 @@
 .video-section {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .video-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-  
-  .video-item {
-    width: 300px;
-    text-align: center;
-  }
-  
-  .video-item video {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .video-item p {
-    margin-top: 0.5rem;
-    font-weight: bold;
-  }
-  
+  padding: 2rem;
+  text-align: center;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.video-item {
+  width: 300px;
+  text-align: center;
+}
+
+.video-item video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.pagination button {
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: bold;
+  color: #333;
+}

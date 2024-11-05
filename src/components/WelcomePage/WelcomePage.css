@@ -1,3 +1,4 @@
+/* Container for the Welcome Page */
 .welcome-container {
   display: flex;
   flex-direction: column;
@@ -11,8 +12,21 @@
   text-align: center;
   overflow: hidden;
   transition: background-image 0.5s ease-in-out;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Add this for the smooth fade effect */
+.welcome-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh; /* Adjust height as needed */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  z-index: 2;
+}
+/* Background video styling */
 .background-video {
   position: absolute;
   top: 0;
@@ -23,6 +37,7 @@
   z-index: -1;
 }
 
+/* Background image styling */
 .birthday-background {
   position: absolute;
   top: 0;
@@ -34,50 +49,36 @@
   z-index: -1;
 }
 
-.welcome-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
-  transition: background-image 0.5s ease-in-out;
-}
-
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.birthday-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
+/* Heading style for a modern, impactful look */
 .welcome-container h1 {
-  font-size: 3rem; /* Adjust as needed for larger text */
-  font-weight: bold;
+  font-size: 2.5rem; /* Larger font size for prominence */
+  font-weight: 700; /* Bold font weight */
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+  letter-spacing: -0.02em; /* Slightly tightened spacing */
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 1.2; /* Reduced line height for tighter appearance */
 }
 
+/* Subtitle style with softer font and good readability */
 .welcome-container p {
-  font-size: 1.25rem; /* Adjust as needed for larger text */
-  max-width: 600px;
+  font-size: 1.5rem; /* Larger font size for readability */
+  font-weight: 400; /* Regular weight for contrast with heading */
+  color: #f0f0f0; /* Slightly softer than pure white */
+  max-width: 700px; /* Limits width for better readability */
   margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 1.6; /* Spacious line height for readability */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.signature {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 1.5rem;
+  font-style: italic;
+  opacity: 0.8;
 }

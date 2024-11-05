@@ -25,7 +25,7 @@ const Messages = () => {
 
   return (
     <div className="messages-container">
-      <h2>Birthday Messages</h2>
+      <h2>Birthday Messages 💌</h2>
       <div className="messages-list">
         {messages.map((message) => (
           <div key={message.id} className="message-item">
