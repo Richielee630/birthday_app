@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Messages.css';
 
 const initialMessages = [
@@ -8,8 +8,15 @@ const initialMessages = [
 ];
 
 const Messages = () => {
-  const [messages, setMessages] = useState(initialMessages);
+  const [messages, setMessages] = useState(() => {
+    const savedMessages = localStorage.getItem('messages');
+    return savedMessages ? JSON.parse(savedMessages) : initialMessages;
+  });
   const [newMessage, setNewMessage] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('messages', JSON.stringify(messages));
+  }, [messages]);
 
   const handleInputChange = (e) => {
     setNewMessage(e.target.value);
